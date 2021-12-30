@@ -20,6 +20,7 @@ jobs:
 
     # Build and push the image to Container Registry
     - name: Build and Push container to registry
+      working-directory: CheapAndCheerfulAutoDeploy.WebApp
       run: |
-        docker build -t surgicalcoder/cheapandcheerfulautodeploy:${{ github.sha }} CheapAndCheerfulAutoDeploy.WebApp
+        docker build -t surgicalcoder/cheapandcheerfulautodeploy:${{ github.sha }} .
         docker push surgicalcoder/cheapandcheerfulautodeploy:${{ github.sha }}
