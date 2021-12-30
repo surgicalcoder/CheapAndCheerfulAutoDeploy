@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheapAndCheerfulAutoDeploy.ConsoleCreator", "CheapAndCheerfulAutoDeploy.ConsoleCreator\CheapAndCheerfulAutoDeploy.ConsoleCreator.csproj", "{A884EC51-0FC8-4A9D-AE2B-B623A92CDBA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheapAndCheerfulAutoDeploy", "CheapAndCheerfulAutoDeploy.WebApp\CheapAndCheerfulAutoDeploy.csproj", "{D79BDA68-C7A5-48D0-82CA-8DDE2FE5FBE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A884EC51-0FC8-4A9D-AE2B-B623A92CDBA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A884EC51-0FC8-4A9D-AE2B-B623A92CDBA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A884EC51-0FC8-4A9D-AE2B-B623A92CDBA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A884EC51-0FC8-4A9D-AE2B-B623A92CDBA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79BDA68-C7A5-48D0-82CA-8DDE2FE5FBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79BDA68-C7A5-48D0-82CA-8DDE2FE5FBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79BDA68-C7A5-48D0-82CA-8DDE2FE5FBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79BDA68-C7A5-48D0-82CA-8DDE2FE5FBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

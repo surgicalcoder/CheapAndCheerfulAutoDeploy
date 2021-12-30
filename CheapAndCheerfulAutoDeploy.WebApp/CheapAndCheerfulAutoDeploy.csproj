@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Docker.DotNet" Version="3.125.5" />
+        <PackageReference Include="JsonByExampleGenerator" Version="0.8.4" />
+    </ItemGroup>
+    <ItemGroup>
+        <AdditionalFiles Include="appsettings.json" />
+    </ItemGroup>
+</Project>
