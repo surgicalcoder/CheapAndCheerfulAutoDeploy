@@ -1,0 +1,25 @@
+name: Docker Build
+
+on:
+  push:
+    branches:
+      - master # Default release branch
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    
+    # Use docker login
+    - name: Docker Hub login
+      uses: azure/docker-login@v1
+      with:
+        username: ${{ secrets.CONTAINER_REGISTRY_USERNAME }}
+        password: ${{ secrets.CONTAINER_REGISTRY_PASSWORD }}
+
+    # Build and push the image to Container Registry
+    - name: Build and Push container to registry
+      run: |
+        docker build --file=CheapAndCheerfulAutoDeploy.WebApp/Dockerfile -t surgicalcoder/cheapandcheerfulautodeploy:${{ github.sha }} CheapAndCheerfulAutoDeploy.WebApp
+        docker push surgicalcoder/cheapandcheerfulautodeploy:${{ github.sha }}
